@@ -1,0 +1,88 @@
+.map {
+    margin: 50px 0;
+
+}
+
+.contact {
+    padding-bottom: 100px;
+
+    &__title {
+        color: $title;
+        @extend %title-font;
+        font-size: 36px;
+        line-height: 60px;
+        padding-bottom: 25px;
+        margin-bottom: 40px;
+        position: relative;
+        &::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            height: 2px;
+            width: 200px;
+            background-color: #6D7278;
+            
+        }
+    }
+   .contact__social  {
+       padding-left: 284px;
+       display: flex;
+       margin-bottom: 20px;
+    }
+    &__social-item{
+        padding-right: 40px;
+        &:last-child{
+            padding-right: 0;
+        }
+    }
+    .contacts__fone{
+        color: $default;
+    }
+    .contacts__adress{
+        padding-left: 284px;
+    }
+    .contact__form{
+        padding-left: 284px;
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+    &__city{
+        margin-bottom: 16px;
+
+    }
+    
+    &__form-input{
+        border: 1px solid #dfdfdf;
+        border-radius: 20px;
+        padding: 6px 17px;
+        margin-bottom: 13px;
+        width: 48%;
+        &::placeholder{
+            color: #A1A1A1;
+            font-size: 16px;
+            line-height: 27px;
+            
+        }
+    }
+    &__form-area{
+      width: 100%;
+      border: 1px solid #dfdfdf;
+      border-radius: 20px;
+      padding: 14px 17px;
+      min-height: 125px;
+      resize: none;
+      margin-bottom: 20px;
+    }
+    &__form-btn{
+        border: none;
+        background-color: $title;
+        color: #fffff0;
+        font-weight: 600;
+        border-radius: 21px;
+        padding: 6px 60px;
+        cursor: pointer;
+
+    } 
+}
